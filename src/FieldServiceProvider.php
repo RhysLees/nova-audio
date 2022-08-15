@@ -5,6 +5,7 @@ namespace Rhyslees\NovaAudio;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;
 use Laravel\Nova\Nova;
+use RhysLees\NovaAbout\NovaAbout;
 
 class FieldServiceProvider extends ServiceProvider
 {
@@ -28,6 +29,6 @@ class FieldServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        NovaAbout::addPackage('rhyslees/nova-about');
     }
 }
