@@ -29,6 +29,6 @@ class FieldServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        NovaAbout::addPackage('rhyslees/nova-about');
+        NovaAbout::addPackage('rhyslees/nova-audio');
     }
 }
