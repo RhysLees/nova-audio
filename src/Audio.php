@@ -20,6 +20,13 @@ class Audio extends File
 
     public $expires = null;
 
+    /**
+    * The file types accepted by the field.
+    *
+    * @var string
+    */
+    public $acceptedTypes = 'audio/*';
+
     public function __construct($name, $attribute = null, $disk = 'public', $storageCallback = null, $expiration = null)
     {
         parent::__construct($name, $attribute, $disk, $storageCallback);
@@ -63,10 +70,11 @@ class Audio extends File
     /**
      * Sets the noPlaybackRate property on the Audio tag to the given value
      *
+     * @param bool $value
      * @return $this
      */
-    public function noPlaybackRate()
+    public function playbackRate($value = true)
     {
-        return $this->withMeta(['noPlaybackRate' => true]);
+        return $this->withMeta(['playbackRate' => $value]);
     }
 }

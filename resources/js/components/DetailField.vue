@@ -96,7 +96,7 @@ export default {
 		controlsList() {
 			let controlsList = 'nodownload';
 
-			if(this.field.noPlaybackRate){
+			if(! this.field.playbackRate){
 				controlsList += ' noplaybackrate';
 			}
 			

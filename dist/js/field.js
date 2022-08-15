@@ -53,7 +53,7 @@ __webpack_require__.r(__webpack_exports__);
     controlsList: function controlsList() {
       var controlsList = 'nodownload';
 
-      if (this.field.noPlaybackRate) {
+      if (!this.field.playbackRate) {
         controlsList += ' noplaybackrate';
       }
 
@@ -330,8 +330,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     controlsList: function controlsList() {
       var controlsList = "nodownload";
 
-      if (this.field.noPlaybackRate) {
-        controlsList += " noplaybackrate";
+      if (!this.field.playbackRate) {
+        controlsList += ' noplaybackrate';
       }
 
       return controlsList;
@@ -375,7 +375,7 @@ __webpack_require__.r(__webpack_exports__);
     controlsList: function controlsList() {
       var controlsList = 'nodownload';
 
-      if (this.field.noPlaybackRate) {
+      if (!this.field.playbackRate) {
         controlsList += ' noplaybackrate';
       }
 
