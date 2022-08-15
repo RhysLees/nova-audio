@@ -6,13 +6,28 @@
         "nova"
     ],
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
     "require": {
-        "php": "^7.3|^8.0"
+        "php": "^7.3|^8.0",
+        "laravel/nova": "^4.12"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.1"
     },
     "autoload": {
         "psr-4": {
             "Rhyslees\\NovaAudio\\": "src/"
         }
+    },
+    "scripts": {
+        "format": [
+            "vendor/bin/pint"
+        ]
     },
     "extra": {
         "laravel": {
