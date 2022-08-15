@@ -3,6 +3,7 @@
 		<template #value>
 			<template v-if="shouldShowAudio">
 				<audio
+					class="w-full"
 					controls
 					:controlslist="controlsList"
 					:autoplay="autoplay"
