@@ -39,8 +39,8 @@ Nova Audio extends Nova's built-in File Field so you can use the same options th
     ->autoplay($value = true)
 
     /**
-     * Hide the playback speed controls for the audio field.
+     * Show the playback speed controls for the audio field.
      */
-    ->noPlaybackRate()
+    ->playbackRate($value = true)
 ```
 
