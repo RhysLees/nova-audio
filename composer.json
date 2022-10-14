@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": "^7.3|^8.0",
-        "laravel/nova": "^4.12",
+        "laravel/nova": "^4.15",
         "nova-kit/nova-packages-tool": "^1.0",
         "rhyslees/nova-about": "^1.0"
     },
