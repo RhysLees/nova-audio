@@ -2,7 +2,7 @@
 	<div>
 		<audio
 			v-if="field.previewUrl"
-			class="max-w-[250px]"
+			class="max-w-[250px] mx-auto"
 			controls
 			:controlslist="controlsList"
 			:autoplay="autoplay"

@@ -1,4 +1,1 @@
-/* Nova Field CSS */
-.col-span-3 {
-    grid-column: span 3 / span 3;
-}
+.col-span-3{grid-column:span 3/span 3}
